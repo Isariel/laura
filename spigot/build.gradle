@@ -1,0 +1,66 @@
+plugins {
+
+    id 'com.github.johnrengelman.shadow' version '2.0.4'
+    id 'java'
+}
+
+group 'de.d3adspace.laura'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+shadowJar {
+
+    configurations = [project.configurations.runtime]
+}
+
+repositories {
+
+    maven {
+
+        url "http://repo.dmulloy2.net/nexus/repository/public/"
+    }
+
+    maven {
+
+        url = "https://repo.felix-klauke.de/repository/maven-releases"
+    }
+
+    maven {
+
+        url "https://hub.spigotmc.org/nexus/content/repositories/snapshots"
+    }
+}
+
+dependencies {
+
+    /**
+     * ProtocolLib
+     */
+    compileOnly 'com.comphenix.protocol:ProtocolLib-API:4.2.1'
+
+    /**
+     * PacketWrapper to make protocol handling easier.
+     */
+    compile 'com.comphenix.packetwrapper:PacketWrapper:1.13-R0.1-20180727.162557-1'
+
+    /**
+     * Isabelle for spigot plugin architecture.
+     */
+    compile 'de.d3adspace.isabelle:isabelle-spigot-governator:1.2.0'
+
+    /**
+     * Spigot api that will be provided at runtime.
+     */
+    compileOnly "org.spigotmc:spigot-api:1.13-R0.1-SNAPSHOT"
+
+    /**
+     * Require the api module.
+     */
+    compile project(':laura-spigot-api')
+
+    /**
+     * Require the modules module.
+     */
+    compile project(':laura-spigot-modules')
+}

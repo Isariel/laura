@@ -1,2 +1,9 @@
 rootProject.name = 'laura'
 
+include 'spigot'
+findProject(':spigot')?.name = 'laura-spigot'
+include 'spigot-api'
+findProject(':spigot-api')?.name = 'laura-spigot-api'
+include 'spigot-modules'
+findProject(':spigot-modules')?.name = 'laura-spigot-modules'
+
