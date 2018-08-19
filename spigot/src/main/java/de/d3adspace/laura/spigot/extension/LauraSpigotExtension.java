@@ -4,6 +4,7 @@ import com.google.inject.Binder;
 import de.d3adspace.isabelle.spigot.governator.IsabelleSpigotExtension;
 import de.d3adspace.laura.spigot.api.LauraSpigot;
 import de.d3adspace.laura.spigot.api.service.TabListService;
+import de.d3adspace.laura.spigot.api.service.TitleService;
 import de.d3adspace.laura.spigot.api.util.TimedSection;
 import de.d3adspace.laura.spigot.module.LauraModule;
 import de.d3adspace.laura.spigot.modules.LauraModules;
@@ -36,6 +37,12 @@ public class LauraSpigotExtension extends IsabelleSpigotExtension implements Lau
      */
     @Inject
     private TabListService tabListService;
+
+    /**
+     * The title service.
+     */
+    @Inject
+    private TitleService titleService;
 
     /**
      * The plugin manager needed for listener registrations.
@@ -79,6 +86,7 @@ public class LauraSpigotExtension extends IsabelleSpigotExtension implements Lau
 
         // Bind utility services.
         servicesManager.register(TabListService.class, tabListService, this, ServicePriority.High);
+        servicesManager.register(TitleService.class, titleService, this, ServicePriority.High);
 
         // Bind own plugin instance as a service.
         servicesManager.register(LauraSpigot.class, this, this, ServicePriority.High);

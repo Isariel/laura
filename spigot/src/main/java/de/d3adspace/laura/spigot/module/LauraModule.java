@@ -2,8 +2,10 @@ package de.d3adspace.laura.spigot.module;
 
 import com.google.inject.AbstractModule;
 import de.d3adspace.laura.spigot.api.service.TabListService;
+import de.d3adspace.laura.spigot.api.service.TitleService;
 import de.d3adspace.laura.spigot.modules.service.provider.BukkitServiceProvider;
 import de.d3adspace.laura.spigot.service.TabListServiceImpl;
+import de.d3adspace.laura.spigot.service.TitleServiceImpl;
 import org.bukkit.plugin.ServicesManager;
 
 /**
@@ -19,5 +21,6 @@ public class LauraModule extends AbstractModule {
 
         // Services
         bind(TabListService.class).to(TabListServiceImpl.class);
+        bind(TitleService.class).to(TitleServiceImpl.class);
     }
 }
