@@ -1,9 +1,9 @@
-package de.d3adspace.laura.spigot.service;
+package de.d3adspace.laura.spigot.service.title;
 
 import com.comphenix.packetwrapper.WrapperPlayServerTitle;
 import com.comphenix.protocol.wrappers.EnumWrappers;
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
-import de.d3adspace.laura.spigot.api.service.TitleService;
+import de.d3adspace.laura.spigot.api.service.title.TitleService;
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.chat.ComponentSerializer;
 import org.bukkit.entity.Player;

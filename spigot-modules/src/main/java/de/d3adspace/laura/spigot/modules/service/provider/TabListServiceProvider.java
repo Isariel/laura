@@ -1,6 +1,6 @@
 package de.d3adspace.laura.spigot.modules.service.provider;
 
-import de.d3adspace.laura.spigot.api.service.TabListService;
+import de.d3adspace.laura.spigot.api.service.tablist.TabListService;
 import org.bukkit.plugin.ServicesManager;
 
 import javax.inject.Inject;

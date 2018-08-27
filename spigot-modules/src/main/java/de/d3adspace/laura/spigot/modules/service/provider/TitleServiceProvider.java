@@ -1,6 +1,6 @@
 package de.d3adspace.laura.spigot.modules.service.provider;
 
-import de.d3adspace.laura.spigot.api.service.TitleService;
+import de.d3adspace.laura.spigot.api.service.title.TitleService;
 import org.bukkit.plugin.ServicesManager;
 
 import javax.inject.Inject;

@@ -3,3 +3,5 @@ name: Laura
 version: 1.0.0
 
 depends: [ ProtocolLib ]
+
+soft-depends: [ Vault ]
