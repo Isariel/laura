@@ -1,4 +1,4 @@
-package de.d3adspace.laura.spigot.api.service;
+package de.d3adspace.laura.spigot.api.service.tablist;
 
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
 import org.bukkit.entity.Player;

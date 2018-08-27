@@ -1,8 +1,8 @@
-package de.d3adspace.laura.spigot.service;
+package de.d3adspace.laura.spigot.service.tablist;
 
 import com.comphenix.packetwrapper.WrapperPlayServerPlayerListHeaderFooter;
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
-import de.d3adspace.laura.spigot.api.service.TabListService;
+import de.d3adspace.laura.spigot.api.service.tablist.TabListService;
 import org.bukkit.entity.Player;
 
 import javax.inject.Singleton;

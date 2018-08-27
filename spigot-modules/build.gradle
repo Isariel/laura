@@ -18,6 +18,11 @@ repositories {
 
         url "https://hub.spigotmc.org/nexus/content/repositories/snapshots"
     }
+
+    maven {
+
+        url "http://nexus.hc.to/content/repositories/pub_releases"
+    }
 }
 
 dependencies {
@@ -26,6 +31,11 @@ dependencies {
      * ProtocolLib
      */
     compileOnly group: 'com.comphenix.protocol', name: 'ProtocolLib-API', version: '4.2.1'
+
+    /**
+     * Vault API
+     */
+    compileOnly group: 'net.milkbowl.vault', name: 'VaultAPI', version: '1.6'
 
     /**
      * Spigot api that will be provided at runtime.

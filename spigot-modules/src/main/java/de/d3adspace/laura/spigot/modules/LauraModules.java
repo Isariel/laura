@@ -3,6 +3,7 @@ package de.d3adspace.laura.spigot.modules;
 import com.google.inject.Module;
 import de.d3adspace.laura.spigot.modules.protocol.ProtocolLibModule;
 import de.d3adspace.laura.spigot.modules.service.LauraServiceModule;
+import de.d3adspace.laura.spigot.modules.vault.VaultModule;
 
 /**
  * Contains some factory methods for popular modules, that are widely used.
@@ -34,5 +35,17 @@ public class LauraModules {
     public static Module createServiceModule() {
 
         return new LauraServiceModule();
+    }
+
+    /**
+     * Create a module with vault bindings.
+     *
+     * @return The module instance.
+     *
+     * @see VaultModule The module.
+     */
+    public static Module createVaultModule() {
+
+        return new VaultModule();
     }
 }

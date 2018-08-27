@@ -1,0 +1,7 @@
+# Chat specific configurations.
+chat:
+  # Section with some vault specific settings.
+  vault:
+    # Vault chat format where {0} will be the players prefix and {1} the suffix. %s will be replaced with player
+    # name and message.
+    format: "{0}%s{1}: %s"

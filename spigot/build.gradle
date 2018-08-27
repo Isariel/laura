@@ -30,6 +30,11 @@ repositories {
 
         url "https://hub.spigotmc.org/nexus/content/repositories/snapshots"
     }
+
+    maven {
+
+        url "http://nexus.hc.to/content/repositories/pub_releases"
+    }
 }
 
 dependencies {
@@ -38,6 +43,11 @@ dependencies {
      * ProtocolLib
      */
     compileOnly 'com.comphenix.protocol:ProtocolLib-API:4.2.1'
+
+    /**
+     * VaultAPI
+     */
+    compileOnly group: 'net.milkbowl.vault', name: 'VaultAPI', version: '1.6'
 
     /**
      * PacketWrapper to make protocol handling easier.

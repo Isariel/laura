@@ -1,4 +1,4 @@
-package de.d3adspace.laura.spigot.api.service;
+package de.d3adspace.laura.spigot.api.service.title;
 
 import net.md_5.bungee.api.chat.BaseComponent;
 import org.bukkit.entity.Player;

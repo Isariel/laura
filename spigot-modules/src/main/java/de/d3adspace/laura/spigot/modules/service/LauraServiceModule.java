@@ -1,8 +1,8 @@
 package de.d3adspace.laura.spigot.modules.service;
 
 import com.google.inject.AbstractModule;
-import de.d3adspace.laura.spigot.api.service.TabListService;
-import de.d3adspace.laura.spigot.api.service.TitleService;
+import de.d3adspace.laura.spigot.api.service.tablist.TabListService;
+import de.d3adspace.laura.spigot.api.service.title.TitleService;
 import de.d3adspace.laura.spigot.modules.service.provider.TabListServiceProvider;
 import de.d3adspace.laura.spigot.modules.service.provider.TitleServiceProvider;
 
