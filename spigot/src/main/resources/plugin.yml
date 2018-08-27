@@ -2,6 +2,6 @@ main: de.d3adspace.laura.spigot.extension.LauraSpigotExtension
 name: Laura
 version: 1.0.0
 
-depends: [ ProtocolLib ]
+depend: [ ProtocolLib ]
 
-soft-depends: [ Vault ]
+soft-depend: [ Vault ]
