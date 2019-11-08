@@ -41,7 +41,7 @@ dependencies {
     /**
      * Vault API
      */
-    compileOnly group: 'net.milkbowl.vault', name: 'VaultAPI', version: '1.6'
+    compileOnly group: 'net.milkbowl.vault', name: 'VaultAPI', version: '1.7'
 
     /**
      * Spigot api that will be provided at runtime.
