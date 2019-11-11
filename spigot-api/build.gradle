@@ -30,7 +30,7 @@ dependencies {
     /**
      * ProtocolLib
      */
-    compileOnly group: 'com.comphenix.protocol', name: 'ProtocolLib-API', version: '4.2.1'
+    compileOnly group: 'com.comphenix.protocol', name: 'ProtocolLib-API', version: '4.4.0'
 
     /**
      * Spigot API that will be provided at runtime.
