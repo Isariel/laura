@@ -52,7 +52,7 @@ dependencies {
     /**
      * Guice for api reasons. No governator needed here.
      */
-    compileOnly group: 'com.google.inject', name: 'guice', version: '4.2.0'
+    compileOnly group: 'com.google.inject', name: 'guice', version: '4.2.3'
     testCompile group: 'com.google.inject', name: 'guice', version: '4.2.0'
 
     /**
